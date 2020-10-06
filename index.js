@@ -13,3 +13,8 @@ const genres = [
     {id: 5, name:'Educational'},
     {id: 6, name:'Sports'}
 ];
+
+app.get('/api/genres',(req,res) => {
+    res.send(genres);
+});
+
