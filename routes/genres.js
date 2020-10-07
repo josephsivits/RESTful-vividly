@@ -1,3 +1,4 @@
+// Requires
 const express = require('express');
 const Joi = require('joi');
 const router = express.Router();
@@ -12,7 +13,7 @@ const genres = [
     {id: 6, name:'Sports'}
 ];
 
-// getting genres api
+// getting genres api .. lists it all
 router.get('/',(req,res) => {
     res.send(genres);
 });
